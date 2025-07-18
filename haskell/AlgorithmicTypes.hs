@@ -54,6 +54,23 @@ checkFav (Person n _ _) = n++", Your Favorite Thing is lame"
 getName p@(Person n _ _ ) = "The name field of (" ++ show p ++ ") is " ++ n
 
 
+-- Case Expressions 
+--  The fundamental construct for doing pattern-matching in Haskell is the case expression
+
+ex03 = case "Hello" of
+  [] -> 3
+  ('H':rs) -> length rs
+  _ -> 7
+
+
+
+-- Resursive Data Types
+data IntList = Empty | Cons Int IntList 
+
+intListProd :: IntList -> Int
+intListProd Empty = 1
+intListProd (Cons x l) = x* intListProd l
+
 
 main = do
   print shoe
