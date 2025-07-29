@@ -24,8 +24,8 @@ k = 3 : 2 : []
 
 hailstoneSeq :: Integer -> [Integer]
 hailstoneSeq n
-| (n == 1) = [1]
-| otherwise = n : hailstoneSeq (hailstone n)
+  | (n == 1) = [1]
+  | otherwise = n : hailstoneSeq (hailstone n)
 
 -- functions on list
 getListLength :: [Integer] -> Integer
@@ -33,9 +33,9 @@ getListLength [] = 0
 getListLength (x : xs) = 1 + getListLength xs
 
 main = do
-putStrLn "hello world"
-print x
-print reallyBig
-print k
-print "hello"
-print [1, 2, 3]
+  putStrLn "hello world"
+  print x
+  print reallyBig
+  print k
+  print "hello"
+  print [1, 2, 3]
